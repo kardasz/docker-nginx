@@ -20,6 +20,6 @@ RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
 VOLUME ["/var/www"]
 
-EXPOSE 8888 443
+EXPOSE 80 443
 
 CMD ["nginx", "-g", "daemon off;"]
